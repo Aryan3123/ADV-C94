@@ -1,0 +1,73 @@
+<link rel="stylesheet" type="text/css" href="style/style.css" >
+<script src="kwitter.js"></script>
+
+<input type="text" id="user_name" class="form-control" placeholder="User Name">
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="inputBox">Input Box:</label>
+        <input type="text" class="form-control" id="inputBox" placeholder="Enter text here">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <button id="login_button" class="tn btn-primary" onclick="addUser()"Log in></button>
+</body>
+</html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome, <span id="username">User</span>!</h2>
+    <button class="btn btn-primary" onclick="logout()">Logout</button>
+
+    <h3>Room Name:</h3>
+    <input type="text" class="form-control" id="roomName" placeholder="Enter room name">
+    <button class="btn btn-primary" onclick="addRoom()">Add Room</button>
+
+    <h3>All Rooms:</h3>
+    <ul id="roomList"></ul>
+  </div>
+</body>
+</html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="kwitter-webapp-6e9c2.appspot.com"></script>
+  <script src="kwitter-webapp-6e9c2.firebaseapp.com"></script>
+  <script src="Kwitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome, <span id="username">User</span>!</h2>
+    <button class="btn btn-primary" onclick="logout()">Logout</button>
+
+    <h3>Room Name:</h3>
+    <div class="input-group">
+      <input type="text" class="form-control" id="roomName" placeholder="Enter room name">
+      <div class="input-group-append">
+        <button class="btn btn-primary" onclick="addRoom()">Add Room</button>
+      </div>
+    </div>
+
+    <h3>All Rooms:</h3>
+    <ul class="list-group" id="roomList"></ul>
+  </div>
+</body>
+</html>
+
